@@ -1,0 +1,146 @@
+/* ------ General ------ */
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+}
+
+/* ------ Header ------ */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #292929;
+}
+
+header a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+header a:hover {
+  color: wheat;
+}
+
+header .logo {
+  font-family: 'Lobster Two', cursive;
+}
+
+header + .spacer {
+  height: 50px;
+  display: block;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(5px, 2fr) 1fr;
+}
+
+.nav #demos-tab {
+  grid-column: 3;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #292929;
+}
+
+.nav-pills .nav-link:hover, .nav-pills .show>.nav-link:hover {
+  color: wheat;
+}
+
+/* ------ Content ------ */
+.welcome {
+  min-height: 200px;
+  margin-top: 20px;
+}
+
+.welcome h1 {
+  text-align: center;
+  margin: auto;
+  font-family: 'Lobster Two', cursive;
+  font-size: 5rem;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 10fr) 1fr;
+}
+
+.divider .container {
+  grid-column: 2;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0;
+}
+
+div.gray {
+  background-color: #292929;
+  color: white;
+  min-height: 300px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.welcome p {
+  text-align: center;
+}
+
+/* ------ Home Page ------ */
+.padding-top-bottom {
+  padding: 20px 0;
+}
+
+/* ------ Demos Page ------ */
+.divider img {
+  width: 600px;
+  max-width: 90vw;
+  margin: 20px 10px;
+  box-shadow: 10px 10px 5px grey;
+  border: solid 2px #292929;
+  border-radius: 20px;
+}
+
+.divider.gray img {
+  border-color: white;
+}
+
+.divider .text {
+  display: block;
+  width: 500px;
+  margin: 20px 10px;
+}
+
+.try-it {
+  display: block;
+  width: 25%;
+  min-width: 80px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
